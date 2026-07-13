@@ -148,15 +148,77 @@
   .progress{position:fixed;top:0;left:0;height:3px;background:var(--ink);width:0;z-index:70;transition:width .25s ease}
   .swipe-hint{position:fixed;bottom:84px;left:50%;transform:translateX(-50%);z-index:55;color:var(--muted);font-size:13px;letter-spacing:.03em;pointer-events:none;transition:opacity .4s}
 
-  @media(max-width:700px){
-    .split{grid-template-columns:1fr;gap:22px;text-align:center;justify-items:center}
+  @media(max-width:760px){
+    .nav{height:58px;padding:0 18px}
+    .brand img{height:26px}
+    .panel{padding:68px 20px 88px}
+    .split{grid-template-columns:1fr;gap:12px;text-align:center;justify-items:center}
     .split.rev .col-text{order:0}
-    .lead,.fdesc,.f-list{margin-left:auto;margin-right:auto}
-    .f-list{justify-items:start;display:inline-grid;text-align:left}
-    .cta-row,.stats,.f-tag{justify-content:center}
-    .stats{justify-content:center}
     .hero-order .col-visual{order:-1}
-    .panel{padding:84px 22px 100px}
+    .lead,.fdesc,.f-list{margin-left:auto;margin-right:auto}
+    .f-list{justify-items:start;display:inline-grid;text-align:left;gap:7px}
+    .f-list li{font-size:13.5px}
+    .f-list .check{width:21px;height:21px;font-size:12px}
+    .cta-row,.stats,.f-tag{justify-content:center}
+
+    /* tipografi + logolar küçülür */
+    h1.title{font-size:clamp(26px,8vw,36px);margin:8px 0 10px}
+    h2.ftitle{font-size:clamp(22px,6.4vw,30px);margin:8px 0 10px}
+    .lead{font-size:14.5px;max-width:340px}
+    .fdesc{font-size:14px;margin-bottom:14px;max-width:340px}
+    .eyebrow{font-size:11px;padding:6px 12px}
+    .hero-pin{width:36px;margin-bottom:6px}
+    .card-pin{width:30px;margin-bottom:8px}
+
+    /* TELEFON: viewport yüksekliğine göre ölçeklenir → ekrana sığar */
+    .phone{width:auto;height:min(39vh,340px);height:min(39dvh,340px);padding:7px;border-radius:30px}
+    .phone::before{width:80px;height:15px}
+    .phone-stage{width:100%}
+    .hero-img{width:100%;max-height:38vh;max-height:38dvh;object-fit:cover}
+    .float-badge{display:none}
+
+    /* etkinlik çipleri kompakt */
+    .chips{justify-content:center;gap:7px;max-width:340px}
+    .chip{font-size:12px;padding:6px 11px}
+    .chip .em{font-size:14px}
+    .chips .chip:nth-child(n+9){display:none}
+
+    /* adım kartları: yatay satır (ikon solda) → az yer kaplar */
+    .steps{grid-template-columns:1fr;gap:10px}
+    .step{padding:15px 16px;display:flex;align-items:center;gap:14px;text-align:left}
+    .step-ic{width:48px;height:48px;margin:0;border-radius:14px;flex-shrink:0}
+    .step-ic img{width:28px;height:28px}
+    .step h4{font-size:16px;margin:0 0 2px}
+    .step p{font-size:12.5px;line-height:1.4}
+    .how-wordmark{width:136px;margin-bottom:10px}
+
+    .cta-row{gap:10px;margin-top:18px}
+    .store{padding:9px 15px}
+    .store b{font-size:15px}
+
+    /* HUD kompakt */
+    .hud{bottom:14px;gap:12px}
+    .navbtn{width:44px;height:44px;font-size:18px}
+    .dots{padding:8px 12px}
+    .swipe-hint{bottom:66px;font-size:12px}
+  }
+
+  /* çok kısa ekranlar (küçük telefon) için ekstra sıkıştırma */
+  @media(max-width:760px) and (max-height:670px){
+    .panel{padding:58px 18px 74px}
+    .phone{height:min(33vh,260px);height:min(33dvh,260px)}
+    .hero-img{max-height:26vh;max-height:26dvh}
+    .f-list,.chips,.stats{display:none}
+    h1.title{font-size:clamp(23px,7vw,29px);margin:6px 0 8px}
+    h2.ftitle{font-size:clamp(20px,6vw,26px);margin:6px 0 8px}
+    .lead{font-size:13px;max-width:300px}
+    .fdesc{font-size:13px;margin-bottom:8px;max-width:300px}
+    .hero-pin{width:30px;margin-bottom:4px}
+    .card-pin{width:26px;margin-bottom:6px}
+    .cta-row{margin-top:12px}
+    .step{padding:12px 14px}
+    .step-ic{width:42px;height:42px}
+    .how-wordmark{width:120px;margin-bottom:8px}
   }
 </style>
 </head>
