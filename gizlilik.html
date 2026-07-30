@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Gizlilik Politikası — FriendsMap</title>
+<meta name="description" content="FriendsMap gizlilik politikası: hangi verilerin, hangi amaçla, KVKK ve GDPR kapsamında nasıl işlendiği." />
+<link rel="icon" type="image/jpeg" href="assets/logo.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#F1EFE3; --surface:#FBFAF4; --surface-alt:#ECEADD; --deep:#E3E1D6;
+    --border:#E3E1D6; --text:#15171C; --sub:#6B6B63; --muted:#A9A79B;
+    --ink:#111111; --cream:#E6D9B8; --dark:#0f0f0f;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;background:var(--bg);color:var(--text);
+    font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased;
+    line-height:1.6;
+  }
+  h1,h2,.font-display{font-family:'Sora','Inter',sans-serif;letter-spacing:-.02em;margin:0}
+  a{color:inherit}
+  img{-webkit-user-drag:none;user-select:none}
+
+  .nav{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;
+       padding:18px clamp(20px,5vw,54px);background:var(--bg);border-bottom:1px solid var(--border)}
+  .brand img{height:28px;width:auto}
+  .nav-links{display:flex;gap:22px;font-size:14px;font-weight:600}
+  .nav-links a{opacity:.65;text-decoration:none}
+  .nav-links a.active,.nav-links a:hover{opacity:1}
+
+  .wrap{max-width:760px;margin:0 auto;padding:56px 22px 100px}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;letter-spacing:.06em;
+           text-transform:uppercase;color:var(--sub);background:var(--surface);border:1px solid var(--border);
+           padding:7px 14px;border-radius:999px}
+  h1{font-size:clamp(30px,5vw,44px);font-weight:800;margin:18px 0 10px}
+  .updated{color:var(--muted);font-size:13px;margin:0 0 30px}
+  .intro{font-size:16px;color:var(--sub);max-width:620px;margin:0 0 40px}
+
+  section.legal-section{padding:22px 0;border-top:1px solid var(--border)}
+  section.legal-section:first-of-type{border-top:none}
+  section.legal-section h2{font-size:19px;font-weight:700;margin-bottom:10px}
+  section.legal-section p{margin:0 0 12px;color:var(--sub);font-size:15px;white-space:pre-line}
+  section.legal-section p:last-child{margin-bottom:0}
+  section.legal-section a{text-decoration:underline;color:var(--text)}
+
+  .footer{max-width:760px;margin:0 auto;padding:0 22px 60px;color:var(--muted);font-size:13px}
+  .footer a{text-decoration:underline}
+
+  @media(max-width:640px){.nav-links{display:none}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a class="brand" href="index.html"><img src="assets/wordmark.png" alt="FRIENDS"/></a>
+  <div class="nav-links">
+    <a href="index.html">Ana Sayfa</a>
+    <a href="gizlilik.html" class="active">Gizlilik Politikası</a>
+    <a href="kosullar.html">Kullanım Koşulları</a>
+  </div>
+</nav>
+
+<div class="wrap">
+  <span class="eyebrow">KVKK &amp; GDPR</span>
+  <h1>Gizlilik Politikası</h1>
+  <p class="updated">Son güncelleme: 30 Temmuz 2026</p>
+  <p class="intro">FriendsMap ("Uygulama"), yakınındaki arkadaşlarını ve etkinlikleri harita üzerinde gösteren bir sosyal konum uygulamasıdır. Bu metin, 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında hangi verilerini hangi amaçla işlediğimizi, kimlerle paylaştığımızı ve haklarını açıklar.</p>
+
+  <section class="legal-section">
+    <h2>1. Veri Sorumlusu</h2>
+    <p>İşbu Uygulama kapsamında kişisel verileriniz, veri sorumlusu sıfatıyla Muhammet Ali Başar (İstasyon Mahallesi, 103. Sokak, Akdemir Apt. No:1/6, Hasanoğlan, Elmadağ/Ankara, Türkiye) tarafından, aşağıda açıklanan kapsam ve amaçlarla işlenmektedir. Sorularınız için <a href="mailto:gizlilik@friendsmap.tr">gizlilik@friendsmap.tr</a> adresinden bize ulaşabilirsiniz.</p>
+  </section>
+
+  <section class="legal-section">
+    <h2>2. Topladığımız Veriler</h2>
+    <p>Hesap Bilgileri: ad soyad, kullanıcı adı, e-posta, şifre (şifrelenmiş/hash olarak saklanır), telefon numarası (opsiyonel), profil fotoğrafı ve galeri görselleri, biyografi.
+
+Konum Verisi: GPS konumun, "Konumumu Paylaş" ayarı açıkken arkadaşlarınla; "Herkes" modu açıkken ayrıca bulunduğun şehirdeki diğer kullanıcılarla paylaşılır. Mekân check-in'lerinde yaklaşık konumun mekân doğrulaması için kullanılır.
+
+İletişim Verisi: arkadaşlık istekleri, birebir/grup mesajları ve ekli medya (fotoğraf, ses, video, dosya). Mesaj içerikleri veritabanında şifrelenmiş olarak saklanır; bu şifreleme sunucu taraflıdır ve uçtan uca şifreleme anlamına gelmez.
+
+Topluluk/Doğrulama Verisi: seçtiğin topluluk türü (üniversiteli, liseli, memur, yerli halk) ve varsa üniversite adı. Üniversite doğrulaması için kullandığın .edu.tr e-postası yalnızca doğrulama amacıyla işlenir.
+
+Rehber Eşleştirme: arkadaş bulma özelliğini kullanırsan, telefon rehberindeki numaralar yalnızca o istek boyunca eşleştirme için işlenir; sunucuda HİÇBİR ŞEKİLDE saklanmaz.
+
+Ödeme Verisi: FriendsCoin satın alımlarında ödeme, üçüncü taraf ödeme kuruluşu (İyzico) üzerinden yapılır; kart bilgilerin bize hiçbir zaman ulaşmaz veya bizde saklanmaz.
+
+Cihaz ve Teknik Veri: cihaz modeli, işletim sistemi, uygulama sürümü, push bildirim token'ı, IP adresi ve genel kullanım/hata kayıtları.
+
+Oyun/Etkinlik Verisi: FriendsCoin puanın, katıldığın/oluşturduğun etkinlik sayıların, sandık açma geçmişin ve görev ilerlemen.</p>
+  </section>
+
+  <section class="legal-section">
+    <h2>3. Verilerini Neden İşliyoruz</h2>
+    <p>• Hesabını oluşturmak, doğrulamak ve güvenliğini sağlamak
+• Haritada seni arkadaşlarına (veya "Herkes" modunda şehrindeki kullanıcılara) göstermek
+• Mesajlaşma, arkadaşlık isteği ve bildirim gibi temel işlevleri sunmak
+• Yakınındaki mekânları, etkinlikleri ve sandıkları göstermek
+• Topluluk rozetini (üniversiteli, memur vb.) doğrulamak ve arkadaş önerilerini iyileştirmek
+• FriendsCoin satın alımlarını ve kupon/ödül işlemlerini gerçekleştirmek
+• Kötüye kullanımı, sahte hesapları ve dolandırıcılığı tespit edip önlemek
+• Yasal yükümlülüklerimizi yerine getirmek</p>
+  </section>
+
+  <section class="legal-section">
+    <h2>4. Hukuki Sebep</h2>
+    <p>Verilerin, KVKK md. 5 kapsamında; sözleşmenin kurulması/ifası (hesabın çalışması için zorunlu veriler), açık rızan (konum paylaşımı, "Herkes" modu, üniversite doğrulaması, rehber eşleştirme gibi opsiyonel/anahtarla açılan özellikler) ve meşru menfaatimiz (güvenlik, dolandırıcılık önleme) hukuki sebeplerine dayanılarak işlenmektedir.</p>
+  </section>
+
+  <section class="legal-section">
+    <h2>5. Konum Verisinin Özel Durumu</h2>
+    <p>Konum paylaşımı Ayarlar ekranından tamamen kapatılabilir ("Konumumu Paylaş" anahtarı). "Herkes" modu ayrı bir anahtardır: kapalıyken yalnızca arkadaşların, açıkken ayrıca şehrindeki diğer kullanıcılar seni haritada görebilir. Konumun asla senin rızan dışında reklam/pazarlama amacıyla üçüncü taraflara satılmaz veya paylaşılmaz. Gerçek zamanlı konum paylaşımının doğası gereği taşıdığı riskleri göz önünde bulundurarak bu özelliği bilinçli kullanmanı öneririz.</p>
+  </section>
+
+  <section class="legal-section">
+    <h2>6. Verilerin Paylaşıldığı Taraflar</h2>
+    <p>Verilerin yalnızca hizmeti sunabilmek için gerekli hizmet sağlayıcılarla paylaşılır:
+
+• Google (Google Maps altyapısı, Google ile Giriş) ve Apple (Apple ile Giriş)
+• Firebase Cloud Messaging (push bildirim gönderimi)
+• İyzico (ödeme işlemleri — kart verileri bize ulaşmaz)
+• Open-Meteo ve OpenStreetMap (hava durumu ve yakındaki mekân verisi — bu servislere yalnızca konum koordinatı gönderilir, kimliğini belirten bilgi gönderilmez)
+• Barındırma sağlayıcımız (Hetzner, Avrupa Birliği merkezli bulut sunucu sağlayıcısı)
+
+Yasal bir zorunluluk olmadıkça verilerin üçüncü taraflara reklam/pazarlama amacıyla satılmadığını veya kiralanmadığını beyan ederiz.</p>
+  </section>
+
+  <section class="legal-section">
+    <h2>7. Saklama Süresi ve Hesap Silme</h2>
+    <p>Verilerin, hesabın aktif olduğu sürece ve yukarıdaki amaçlar için gerekli olduğu müddetçe saklanır. Ayarlar &gt; Hesap Yönetimi bölümünden hesabını kalıcı olarak silebilirsin; hesabın silindiğinde kişisel verilerin, yasal saklama yükümlülüğü bulunan kayıtlar (ör. ödeme kayıtları) hariç olmak üzere sistemlerimizden silinir veya anonim hale getirilir.</p>
+  </section>
+
+  <section class="legal-section">
+    <h2>8. Veri Güvenliği</h2>
+    <p>Verilerin, endüstri standardı önlemlerle korunur: sunucu-istemci iletişimi HTTPS/TLS ile şifrelenir, şifreler hash'lenerek saklanır, mesaj içerikleri veritabanında şifrelenir. Buna rağmen internet üzerinden hiçbir veri iletiminin veya elektronik saklamanın %100 güvenli olduğu garanti edilemez.</p>
+  </section>
+
+  <section class="legal-section">
+    <h2>9. Çocukların Gizliliği ve Yaş Sınırı</h2>
+    <p>Uygulama 13 yaşın altındaki kişilere yönelik değildir ve bu kişilerden bilerek veri toplamayız. Gerçek zamanlı konum paylaşımı içerdiğinden, 18 yaşından küçük kullanıcıların ebeveyn/veli gözetiminde ve bilgisi dahilinde kullanmasını öneririz. 13 yaşından küçük bir kullanıcının verisini topladığımızı fark edersek, bu veriyi derhal sileriz.</p>
+  </section>
+
+  <section class="legal-section">
+    <h2>10. Haklarınız (KVKK md. 11)</h2>
+    <p>KVKK md. 11 uyarınca; kişisel verinin işlenip işlenmediğini öğrenme, işlenmişse buna ilişkin bilgi talep etme, işlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme, yurt içinde/yurt dışında aktarıldığı üçüncü kişileri bilme, eksik/yanlış işlenmişse düzeltilmesini isteme, silinmesini/yok edilmesini isteme, işlenen verilerin münhasıran otomatik sistemler ile analiz edilmesi suretiyle aleyhine bir sonucun ortaya çıkmasına itiraz etme ve kanuna aykırı işleme nedeniyle zarara uğraman hâlinde zararın giderilmesini talep etme haklarına sahipsin. Bu haklarını kullanmak için <a href="mailto:gizlilik@friendsmap.tr">gizlilik@friendsmap.tr</a> adresinden bize ulaşabilirsin.</p>
+  </section>
+
+  <section class="legal-section">
+    <h2>11. Uluslararası Veri Aktarımı</h2>
+    <p>Sunucularımız Avrupa Birliği merkezli bir bulut sağlayıcısında barındırılmaktadır. Bazı hizmet sağlayıcılarımız (Google, Apple, Firebase) verileri Türkiye dışında işleyebilir. Bu aktarımlar, KVKK'nın öngördüğü yurt dışına veri aktarımı şartlarına uygun şekilde gerçekleştirilir.</p>
+  </section>
+
+  <section class="legal-section">
+    <h2>12. AB/AEA Kullanıcıları İçin Ek Bilgiler (GDPR)</h2>
+    <p>Uygulama Türkiye dışına da dağıtıldığı için, Avrupa Birliği/Avrupa Ekonomik Alanı'nda ikamet eden kullanıcılar için Genel Veri Koruma Tüzüğü ("GDPR") kapsamında aşağıdaki ek bilgiler geçerlidir; bu bölüm yukarıdaki KVKK açıklamalarını GDPR ile örtüşen haklar yönünden tamamlar, onların yerine geçmez.
+
+Veri sorumlusunun AB/AEA içinde bir yerleşim yeri veya temsilcisi yoktur (bkz. Madde 1 — Muhammet Ali Başar, Türkiye merkezli bireysel geliştirici). Veri işlemenin hukuki dayanağı işlenen veriye göre değişir: hesabını kullanabilmen için sözleşmenin ifası (md. 6/1-b), meşru menfaat — ör. dolandırıcılık/istismar önleme (md. 6/1-f) veya açık rızan (md. 6/1-a; ör. rehber eşleştirme, konum paylaşımı). Rızaya dayalı işlemeyi dilediğin zaman, geri etkili olmamak kaydıyla, geri çekebilirsin.
+
+KVKK md. 11 kapsamında yukarıda sayılan haklara ek olarak GDPR md. 15-22 uyarınca: verilerini yapılandırılmış, yaygın kullanılan bir formatta almayı ve başka bir hizmete aktarmayı isteme (veri taşınabilirliği), işlemenin sınırlandırılmasını isteme ve ikamet ettiğin ülkedeki yetkili veri koruma otoritesine şikâyette bulunma hakkına da sahipsin.
+
+Bu haklarını kullanmak için <a href="mailto:gizlilik@friendsmap.tr">gizlilik@friendsmap.tr</a> adresinden bize ulaşabilirsin; talebine en geç 30 gün içinde yanıt veririz. Yurt dışına veri aktarımı için Madde 11'e bakabilirsin.</p>
+  </section>
+
+  <section class="legal-section">
+    <h2>13. Çerezler ve Benzer Teknolojiler</h2>
+    <p>Uygulama bir mobil uygulama olduğundan web çerezleri kullanmaz. Oturumunu sürdürebilmek için cihazında yerel olarak bir oturum belirteci (token) saklanır. Reklam amaçlı üçüncü taraf izleme/analitik SDK'sı kullanmıyoruz.</p>
+  </section>
+
+  <section class="legal-section">
+    <h2>14. Politika Değişiklikleri</h2>
+    <p>Bu politikayı zaman zaman güncelleyebiliriz. Önemli değişikliklerde uygulama içi bildirimle seni bilgilendiririz. Güncel sürüm her zaman bu sayfada ve uygulama içindeki ilgili ekranda yayındadır.</p>
+  </section>
+
+  <section class="legal-section">
+    <h2>15. İletişim</h2>
+    <p>Sorularınız, talepleriniz veya şikayetleriniz için: <a href="mailto:destek@friendsmap.tr">destek@friendsmap.tr</a></p>
+  </section>
+</div>
+
+<div class="footer">
+  <a href="index.html">← Ana sayfaya dön</a> · <a href="kosullar.html">Kullanım Koşulları</a>
+</div>
+
+</body>
+</html>
